@@ -1,0 +1,44 @@
+ .footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ff5100;    
+  color: white;
+  text-align: center;
+  padding: 4px 0px;
+  font-size: 30px;
+  height: 50px;
+} 
+/*.footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #ff5a00;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    position: relative;   
+} */
+/* :host {
+    display: block;
+    margin-top: auto;
+} */
+
+/* Footer main style */
+/* .footer {
+    width: 100%;
+    background-color: #ff5a00;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    position: fixed;   
+}*/
+
+/* Optional center alignment
+.footer h3,
+.footer p {
+    margin: 0;
+} */

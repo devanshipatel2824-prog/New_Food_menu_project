@@ -1,0 +1,35 @@
+
+<form>
+    <input placeholder="Name" [(ngModel)]="nameInput" name="name">
+    <input placeholder="Email" [(ngModel)]="emailInput" name="email">
+    <input placeholder="Password" type="password"
+          [(ngModel)]="passwordInput" name="password">
+    <input placeholder="Address" [(ngModel)]="addressInput" name="address">
+
+    <button type="button" (click)="add()">Add</button>
+  </form>
+
+  <hr>
+
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
+
+    @for (user of users; track $index) {
+      <tr>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.password }}</td>
+        <td>{{ user.address }}</td>
+        <td>
+ <button (click)="edit($index)">Edit</button>
+          <button (click)="delete($index)">Delete</button>
+        </td>
+      </tr>
+    }
+  </table>

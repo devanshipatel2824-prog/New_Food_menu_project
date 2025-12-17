@@ -1,0 +1,15 @@
+.page-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.food-category {
+  margin-bottom: 40px;
+}
+
+.food-category img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 10px;
+}

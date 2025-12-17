@@ -1,0 +1,30 @@
+<div class="home-section">
+
+  <!-- LEFT : IMAGE SLIDER -->
+  <div class="home-image">
+    <img
+      *ngFor="let img of slides; let i = index"
+      [src]="img"
+      class="slide-img"
+      [class.active]="i === currentIndex"
+      alt="Hotel Image"
+    />
+
+    <!-- Slider Buttons -->
+    <button class="nav-btn prev" (click)="prevSlide()">❮</button>
+    <button class="nav-btn next" (click)="nextSlide()">❯</button>
+  </div>
+
+  <!-- RIGHT : CONTENT -->
+  <div class="home-content">
+    <h1 class="hotel-name">Royal Spice Restaurant</h1>
+    <p class="hotel-tagline">
+      Taste the Tradition, Feel the Freshness
+    </p>
+    <p class="hotel-desc">
+      We serve delicious, hygienic and freshly prepared food
+      with authentic flavors to make your day special.
+    </p>
+  </div>
+
+</div>
