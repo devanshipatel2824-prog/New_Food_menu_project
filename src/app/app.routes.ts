@@ -45,6 +45,10 @@ export const routes: Routes = [
 ]
 },
 {
+    path:'',
+    component:HealthyFood
+},
+{
     path:'contact',
     component:Contact
 },
